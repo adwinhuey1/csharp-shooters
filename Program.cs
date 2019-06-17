@@ -19,6 +19,18 @@ namespace valkyrieIMS
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                // .ConfigureAppConfiguration(SetUpConfiguration)
                 .UseStartup<Startup>();
+
+        /* 
+        private static void SetUpConfiguration(WebHostBuilderContext arg1, IConfigurationBuilder builder)
+        {
+            builder.Sources.Clear();
+            
+            builder.AddJsonFile("config.json", false, true)
+                .AddEnvironmentVariables();
+        }
+        */
     }
+    
 }

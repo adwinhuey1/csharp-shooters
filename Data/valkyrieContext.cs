@@ -3,6 +3,14 @@ using Microsoft.EntityFrameworkCore;
 
 namespace valkyrieIMS.Data {
     public class valkyrieContext: DbContext {
-        public DbSet<Item> Items { get; set; }
+        public valkyrieContext(DbContextOptions<valkyrieContext> options) : base(options) {
+            
+        }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Customer> Customers{ get; set; }
+        public DbSet<Vendor> Vendors { get; set; }
+        public DbSet<PurchaseInvoice> PurchaseInvoices { get; set; }
+        public DbSet<SaleReceipt> SaleReceipts { get; set; }
+
     }
 }
