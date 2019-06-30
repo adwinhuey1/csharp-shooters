@@ -1,5 +1,5 @@
 {
-  "FilePath": "/Users/nathanbrenke/Documents/WOZU/ValkyrieIMS/ValkyrieIMS.csproj",
+  "FilePath": "/Users/Alexis/Desktop/ValkyrieIMS/ValkyrieIMS.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -2943,13 +2943,108 @@
   "RootNamespace": "ValkyrieIMS",
   "Documents": [
     {
-      "FilePath": "Views/Home/Inventory.cshtml",
-      "TargetPath": "Views/Home/Inventory.cshtml",
+      "FilePath": "Views/Invoice/Delete.cshtml",
+      "TargetPath": "Views/Invoice/Delete.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views/Home/Login.cshtml",
-      "TargetPath": "Views/Home/Login.cshtml",
+      "FilePath": "Views/Customer/Create.cshtml",
+      "TargetPath": "Views/Customer/Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Product/Edit.cshtml",
+      "TargetPath": "Views/Product/Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Invoice/Index.cshtml",
+      "TargetPath": "Views/Invoice/Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/SaleReceipt/Create.cshtml",
+      "TargetPath": "Views/SaleReceipt/Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Invoice/Edit.cshtml",
+      "TargetPath": "Views/Invoice/Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/SaleReceipt/Details.cshtml",
+      "TargetPath": "Views/SaleReceipt/Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Home/Privacy.cshtml",
+      "TargetPath": "Views/Home/Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Invoice/Details.cshtml",
+      "TargetPath": "Views/Invoice/Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Vendor/Delete.cshtml",
+      "TargetPath": "Views/Vendor/Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Vendor/Details.cshtml",
+      "TargetPath": "Views/Vendor/Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Customer/Details.cshtml",
+      "TargetPath": "Views/Customer/Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Product/Details.cshtml",
+      "TargetPath": "Views/Product/Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Customer/Delete.cshtml",
+      "TargetPath": "Views/Customer/Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Product/Create.cshtml",
+      "TargetPath": "Views/Product/Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/SaleReceipt/Delete.cshtml",
+      "TargetPath": "Views/SaleReceipt/Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Invoice/Create.cshtml",
+      "TargetPath": "Views/Invoice/Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Vendor/Index.cshtml",
+      "TargetPath": "Views/Vendor/Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Product/Index.cshtml",
+      "TargetPath": "Views/Product/Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/SaleReceipt/Edit.cshtml",
+      "TargetPath": "Views/SaleReceipt/Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Customer/Edit.cshtml",
+      "TargetPath": "Views/Customer/Edit.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -2978,13 +3073,38 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views/SaleReceipt/Index.cshtml",
+      "TargetPath": "Views/SaleReceipt/Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views/_ViewStart.cshtml",
       "TargetPath": "Views/_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views/Customer/Index.cshtml",
+      "TargetPath": "Views/Customer/Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views/Shared/_Layout.cshtml",
       "TargetPath": "Views/Shared/_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Vendor/Edit.cshtml",
+      "TargetPath": "Views/Vendor/Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Vendor/Create.cshtml",
+      "TargetPath": "Views/Vendor/Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Product/Delete.cshtml",
+      "TargetPath": "Views/Product/Delete.cshtml",
       "FileKind": "mvc"
     }
   ]

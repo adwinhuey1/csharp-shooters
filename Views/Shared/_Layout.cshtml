@@ -27,15 +27,41 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
+                    <ul class="nav nav-tabs">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Login">Login</a>
+                         <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Product" asp-action="Index">Products</a>
+                        </li>
+                       <li class="nav-link nav-item dropdown">
+                            <a class="dropdown-toggle text-dark" data-toggle="dropdown">Vendors
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                 <li>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Vendor" asp-action="Index">Vendor List</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Invoice" asp-action="Index">Invoices</a>
+                                </li>
+                            </ul>    
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" data-toggle="dropdown">Customers
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                 <li>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Customer" asp-action="Index">Customer List</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="SaleReceipt" asp-action="Index">Sales Receipts</a>
+                                </li>
+                            </ul> 
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Inventory">Inventory</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                     </ul>
                 </div>
@@ -51,7 +77,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2019 - ValkyrieIMS by C# Shooters -
+            &copy; 2019 - ValkyrieIMS - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
 
