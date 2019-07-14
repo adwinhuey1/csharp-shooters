@@ -10,7 +10,28 @@ namespace ValkyrieIMS.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly ValkyrieIMSContext _context;
         public IActionResult Index()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create(User User)
+        {
+            if (ModelState.IsValid) {
+
+                _context.Add(User);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Welcome));
+            }
+            return View(User);
+        }
+         public IActionResult Welcome() {
+            return View();
+        }
+         public IActionResult Login()
         {
             return View();
         }

@@ -1,10 +1,11 @@
 using ValkyrieIMS.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace ValkyrieIMS.Models {
-    public class ValkyrieIMSContext: DbContext {
-        public ValkyrieIMSContext(DbContextOptions<ValkyrieIMSContext> options) : base(options) {
-            
+    public class ValkyrieIMSContext: IdentityDbContext<User>{
+        public ValkyrieIMSContext(DbContextOptions<ValkyrieIMSContext> options) : base(options) 
+        {
         }
         public DbSet<Product> Products { get; set; }
         public DbSet<Customer> Customers{ get; set; }

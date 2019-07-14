@@ -1,8 +1,24 @@
+@model ValkyrieIMS.Models.User
 @{
     ViewData["Title"] = "Login";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Use this page to create Login</h1>
-   <p>Buuild our login Script Here.</p>
+    <h1 class="display-4">Welcome to Valkyrie IMS</h1>
+    <p>The host of your inventory needs.</p>
 </div>
+<h1>Login to Manage Your Inventory</h1>
+
+<form asp-controller="Home" asp-action="Login" method="POST">
+    <div>
+        <label asp-for="UserName"></label>
+        <input asp-for="UserName" />
+    </div>
+    <div>
+        <label asp-for="PasswordHash"></label>
+        <input asp-for="PasswordHash" />
+    </div>
+    <div>
+        <input type="submit" value="Login" />
+    </div>
+</form>
