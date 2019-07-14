@@ -11,6 +11,9 @@ namespace ValkyrieIMS.Controllers
     public class HomeController : Controller
     {
         private readonly ValkyrieIMSContext _context;
+        public HomeController(ValkyrieIMSContext context) {
+            _context = context;
+        }
         public IActionResult Index()
         {
             return View();
@@ -28,10 +31,12 @@ namespace ValkyrieIMS.Controllers
             }
             return View(User);
         }
-         public IActionResult Welcome() {
+         
+        public IActionResult Welcome() {
             return View();
         }
-         public IActionResult Login()
+        
+        public IActionResult Login()
         {
             return View();
         }
