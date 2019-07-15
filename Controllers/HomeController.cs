@@ -33,7 +33,9 @@ namespace ValkyrieIMS.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Welcome));
             }
-            return View("Error");
+            else {
+                return View("Error");
+            }
         }
          
         public IActionResult Welcome() {
