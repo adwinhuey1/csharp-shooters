@@ -11,5 +11,6 @@ namespace ValkyrieIMS.Models {
         public decimal SalePrice {get; set;}
         public string Unit {get; set;}
         public DateTime ExpirationDate {get; set;}
+       
     }
 }
