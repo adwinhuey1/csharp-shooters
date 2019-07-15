@@ -13,6 +13,7 @@ namespace ValkyrieIMS.Models {
 
         public ICollection<Product> Products { get; set; }
         public ICollection<Customer> Customers { get; set; }
+    
 
          
 

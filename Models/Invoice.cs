@@ -11,6 +11,7 @@ namespace ValkyrieIMS.Models {
         public DateTime InvoiceDate { get; set; }
         public ICollection<Product> Products { get; set; }
         public ICollection<Vendor> Vendors { get; set; }
+        
 
     }
 }
