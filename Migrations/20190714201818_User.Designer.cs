@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ValkyrieIMS.Models;
 
 namespace ValkyrieIMS.Migrations
 {
     [DbContext(typeof(ValkyrieIMSContext))]
-    partial class ValkyrieIMSContextModelSnapshot : ModelSnapshot
+    [Migration("20190714201818_User")]
+    partial class User
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -257,9 +259,6 @@ namespace ValkyrieIMS.Migrations
 
                     b.Property<string>("NormalizedUserName")
                         .HasMaxLength(256);
-
-                    b.Property<string>("Password")
-                        .IsRequired();
 
                     b.Property<string>("PasswordHash");
 

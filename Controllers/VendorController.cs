@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ValkyrieIMS.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ValkyrieIMS.Controllers
 {
+    
     public class VendorController : Controller
     {
         private readonly ValkyrieIMSContext _context;

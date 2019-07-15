@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -29,6 +32,8 @@ namespace ValkyrieIMS
             var connectionString = "Data Source = Valkyrie.db";
             services.AddDbContext<ValkyrieIMSContext>(options => options.UseSqlite(connectionString));
             
+            services.AddDefaultIdentity<IdentityUser>().AddRoles<IdentityRole>();
+
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
@@ -36,8 +41,16 @@ namespace ValkyrieIMS
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            services.AddDefaultIdentity<IdentityUser>().AddRoles<IdentityRole>();
+            
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("RequireUserRole",
+                    policy => policy.RequireRole("User"));
+            });    
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
