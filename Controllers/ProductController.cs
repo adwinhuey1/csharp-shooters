@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace ValkyrieIMS.Controllers
 {
-    [Authorize]
+   
     public class ProductController : Controller
     {
         private readonly ValkyrieIMSContext _context;

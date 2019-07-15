@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace ValkyrieIMS.Controllers
 {
-     [Authorize]
+    
     public class VendorController : Controller
     {
         private readonly ValkyrieIMSContext _context;
