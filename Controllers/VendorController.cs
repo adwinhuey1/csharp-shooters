@@ -5,17 +5,17 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using ValkyrieIMS.Models;
+using valkyrieID.Models;
 using Microsoft.AspNetCore.Authorization;
 
 namespace ValkyrieIMS.Controllers
 {
-    
+    [Authorize]   
     public class VendorController : Controller
     {
-        private readonly ValkyrieIMSContext _context;
+        private readonly ValkyrieDBContext _context;
 
-        public VendorController(ValkyrieIMSContext context)
+        public VendorController(ValkyrieDBContext context)
         {
             _context = context;
         }

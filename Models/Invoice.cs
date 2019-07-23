@@ -1,8 +1,10 @@
 using System;
 using System.Collections.Generic;
 
-namespace ValkyrieIMS.Models {
-    public class Invoice {
+namespace valkyrieID.Models
+{
+    public class Invoice 
+    {
         public int InvoiceId { get; set; }
         public string VendorName { get; set; }
         public Product ProductName { get; set; }

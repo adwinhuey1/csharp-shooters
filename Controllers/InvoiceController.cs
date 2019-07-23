@@ -5,18 +5,18 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using ValkyrieIMS.Models;
+using valkyrieID.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace ValkyrieIMS.Controllers
 {
-    
+    [Authorize]   
     public class InvoiceController : Controller
     {
-        private readonly ValkyrieIMSContext _context;
+        private readonly ValkyrieDBContext _context;
 
-        public InvoiceController(ValkyrieIMSContext context)
+        public InvoiceController(ValkyrieDBContext context)
         {
             _context = context;
         }

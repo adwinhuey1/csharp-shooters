@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace ValkyrieIMS.Models {
+namespace valkyrieID.Models {
     public class SaleReceipt {
         public int SaleReceiptId { get; set; }
         public DateTime ReceiptDate { get; set; }
